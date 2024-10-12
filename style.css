@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(235, 235, 235, 0.9);
+    backdrop-filter: blur(10px);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.5); /* Şəffaf ağ arxa plan */
+    border-radius: 15px; /* Küncləri yuvarlaqlaşdırır */
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Kölgə efekti */
+    backdrop-filter: blur(15px); /* Arxa planın bulanıqlığı */
+    width: 300px; /* Qutunun genişliyi */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: #888; /* Daxil edilən yerin yer tutucu rəngi */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50; /* Yaşıl düymə rəngi */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049; /* Hover zamanı rəng dəyişməsi */
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333; /* Nəticənin yazı rəngi */
+}
